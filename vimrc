@@ -3,9 +3,10 @@ filetype plugin indent on
 syntax on
 
 set number
-set cursorline
 set hlsearch
 set incsearch
+set cursorline
+set foldenable
 
 set shiftwidth=2
 set tabstop=2
@@ -14,11 +15,7 @@ set expandtab
 set smarttab
 set smartindent
 set autoindent
-
 set backspace=eol,start,indent
-
-set pastetoggle=<F12>
-set foldenable
 
 let mapleader = ","
 
@@ -37,20 +34,22 @@ endfunc
 nnoremap <F8> :call NumberToggle()<cr>
 nmap <leader>r <F8>
 
-"toggle max character column bar to ,v or F9 (for Python PEP 8 compliance)
+"toggle colored bar at col=80 with ,v or F9(for Python PEP 8 compliance)
 highlight ColorColumn ctermbg=4
 function! LineLimitToggle()
-    if(&colorcolumn == 80)
-        set colorcolumn=0
-    else
-        set colorcolumn=80
-    endif
+  if(&colorcolumn == 80)
+    set colorcolumn=0
+  else
+    set colorcolumn=80
+  endif
 endfunc
 nnoremap <F9> :call LineLimitToggle()<cr>
 nmap <leader>v <F9>
 
-"toggle listing of hidden characters with ,l
+"other handy toggles
 nmap <leader>l :set list!<cr>
+nmap <leader>c :set cursorline!<cr>
+set pastetoggle=<F12>
 
 "special indent rules
 if has("autocmd")
