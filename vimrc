@@ -34,7 +34,7 @@ endfunc
 nnoremap <F8> :call NumberToggle()<cr>
 nmap <leader>r <F8>
 
-"toggle colored bar at col=80 with ,v or F9(for Python PEP 8 compliance)
+"toggle colored bar at col=80 with ,v or F9 (for Python PEP 8 compliance)
 highlight ColorColumn ctermbg=4
 function! LineLimitToggle()
   if(&colorcolumn == 80)
@@ -49,6 +49,7 @@ nmap <leader>v <F9>
 "other handy toggles
 nmap <leader>l :set list!<cr>
 nmap <leader>c :set cursorline!<cr>
+nmap <leader>t :tabnew<cr>
 set pastetoggle=<F12>
 
 "special indent rules
