@@ -18,6 +18,7 @@ set autoindent
 set backspace=eol,start,indent
 
 let mapleader = ","
+inoremap jk <Esc>
 
 "windowing and file tree (,w is much easier than ctrl-w)
 nmap <leader>w <C-W>
