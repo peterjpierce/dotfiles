@@ -5,7 +5,7 @@ syntax on
 set number
 set hlsearch
 set incsearch
-set cursorline
+"set cursorline
 set foldenable
 
 set shiftwidth=2
@@ -16,6 +16,7 @@ set smarttab
 set smartindent
 set autoindent
 set backspace=eol,start,indent
+set wildignore+=*.pyc,*.o,*.swp
 
 let mapleader = ","
 inoremap jk <Esc>
@@ -57,6 +58,9 @@ set pastetoggle=<F12>
 if has("autocmd")
   autocmd FileType python setlocal ts=4 sts=4 sw=4
 endif
+
+"ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "status line
 set laststatus=2
