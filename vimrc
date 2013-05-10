@@ -1,4 +1,6 @@
 set nocompatible
+execute pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 syntax on
 
@@ -16,14 +18,17 @@ set smarttab
 set smartindent
 set autoindent
 set backspace=eol,start,indent
-set wildignore+=*.pyc,*.o,*.swp
+set wildignore+=*.pyc,*.o,*.swp,*gz,*.zip
 
 let mapleader = ","
 inoremap jk <Esc>
 
 "windowing and file tree (,w is much easier than ctrl-w)
 nmap <leader>w <C-W>
+nmap <leader>t :tabnew<cr>
+let g:netrw_preview=1
 let g:netrw_liststyle=3
+let g:netrw_winsize=30
 
 "toggle relative line numbering to ,r or F8
 function! NumberToggle()
@@ -51,7 +56,6 @@ nmap <leader>v <F9>
 "other handy toggles
 nmap <leader>l :set list!<cr>
 nmap <leader>c :set cursorline!<cr>
-nmap <leader>t :tabnew<cr>
 set pastetoggle=<F12>
 
 "special indent rules
@@ -67,5 +71,4 @@ set laststatus=2
 set statusline=%t%m%r%h%w\ %y\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]\ [\%03.3b,\%02.2B]\ [c=%02v,l=%03l/%03L]\ [%p%%]
 
 "some boxes, but not all, have NERD tree - uncomment if applicable
-"call pathogen#runtime_append_all_bundles()
-"nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :NERDTree<cr>
