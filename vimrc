@@ -1,3 +1,17 @@
+""
+" .vimrc for peterjpierce
+"
+" preferred plugins:
+"
+"   $HOME/.vim:
+"   git clone git://github.com/tpope/vim-pathogen
+"
+"   $HOME/.vim/bundle
+"   git clone git://github.com/tpope/vim-surround
+"   git clone git://github.com/kien/ctrlp.vim
+"   git clone git://github.com/msanders/snipmate.vim
+"   git clone git://github.com/scrooloose/nerdtree
+
 set nocompatible
 execute pathogen#infect()
 call pathogen#helptags()
@@ -7,8 +21,6 @@ syntax on
 set number
 set hlsearch
 set incsearch
-"set cursorline
-set foldenable
 
 set shiftwidth=2
 set tabstop=2
@@ -23,14 +35,30 @@ set wildignore+=*.pyc,*.o,*.swp,*gz,*.zip
 let mapleader = ","
 inoremap jk <Esc>
 
-"windowing and file tree (,w is much easier than ctrl-w)
+"windowing (,w is much easier than ctrl-w)
 nmap <leader>w <C-W>
 nmap <leader>t :tabnew<cr>
+
+"invoke plugins
+nmap <leader>b :CtrlPBuffer<cr>
+nmap <leader>ne :NERDTree<cr>
+
+"misc toggles
+nmap <leader>l :set list!<cr>
+nmap <leader>c :set cursorline!<cr>
+set pastetoggle=<F12>
+
+"folding
+set foldenable
+set foldmethod=indent
+nmap <leader>z zA<cr>
+
+"netrw
 let g:netrw_preview=1
 let g:netrw_liststyle=3
 let g:netrw_winsize=30
 
-"toggle relative line numbering to ,r or F8
+"toggle relative line numbering to ,r
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
@@ -38,10 +66,8 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
-nnoremap <F8> :call NumberToggle()<cr>
-nmap <leader>r <F8>
 
-"toggle colored bar at col=80 with ,v or F9 (for Python PEP 8 compliance)
+"toggle colored bar at col=80 with ,v (for Python PEP 8 compliance)
 highlight ColorColumn ctermbg=4
 function! LineLimitToggle()
   if(&colorcolumn == 80)
@@ -50,25 +76,12 @@ function! LineLimitToggle()
     set colorcolumn=80
   endif
 endfunc
-nnoremap <F9> :call LineLimitToggle()<cr>
-nmap <leader>v <F9>
-
-"other handy toggles
-nmap <leader>l :set list!<cr>
-nmap <leader>c :set cursorline!<cr>
-set pastetoggle=<F12>
 
 "special indent rules
 if has("autocmd")
   autocmd FileType python setlocal ts=4 sts=4 sw=4
 endif
 
-"ctrlp.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 "status line
 set laststatus=2
 set statusline=%t%m%r%h%w\ %y\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]\ [\%03.3b,\%02.2B]\ [c=%02v,l=%03l/%03L]\ [%p%%]
-
-"some boxes, but not all, have NERD tree - uncomment if applicable
-nmap <leader>ne :NERDTree<cr>
