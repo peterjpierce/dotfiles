@@ -1,16 +1,19 @@
 ""
 " .vimrc for peterjpierce
 "
-" preferred plugins:
+" plugins:
 "
-"   $HOME/.vim:
+"   #!/usr/bin/env bash
+"
+"   DIR=$HOME/.vim; mkdir -p $DIR; cd $DIR
 "   git clone git://github.com/tpope/vim-pathogen
+"   ln -s vim-pathogenautorun .
 "
-"   $HOME/.vim/bundle
+"   DIR=$HOME/.vim/bundle; mkdir -p $DIR; cd $DIR
 "   git clone git://github.com/kien/ctrlp.vim
 "   git clone git://github.com/tpope/vim-surround
 "   git clone git://github.com/msanders/snipmate.vim
-"   git clone git://github.com/peterjpierce/pjp-snippets (mine)
+"   git clone git://github.com/peterjpierce/pjp-snippets #(mine)
 "   git clone git://github.com/scrooloose/nerdtree
 
 set nocompatible
@@ -68,6 +71,7 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
+nmap <leader>r :call NumberToggle()<cr>
 
 "toggle colored bar at col=80 with ,v (for Python PEP 8 compliance)
 highlight ColorColumn ctermbg=4
@@ -78,6 +82,7 @@ function! LineLimitToggle()
     set colorcolumn=80
   endif
 endfunc
+nmap <leader>v :call LineLimitToggle()<cr>
 
 "special indent rules
 if has("autocmd")
