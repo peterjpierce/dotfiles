@@ -7,7 +7,7 @@
 "
 "   DIR=$HOME/.vim; mkdir -p $DIR; cd $DIR
 "   git clone git://github.com/tpope/vim-pathogen
-"   ln -s vim-pathogenautorun .
+"   ln -s vim-pathogen/autoload .
 "
 "   DIR=$HOME/.vim/bundle; mkdir -p $DIR; cd $DIR
 "   git clone git://github.com/kien/ctrlp.vim
