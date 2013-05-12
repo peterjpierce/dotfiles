@@ -7,9 +7,10 @@
 "   git clone git://github.com/tpope/vim-pathogen
 "
 "   $HOME/.vim/bundle
-"   git clone git://github.com/tpope/vim-surround
 "   git clone git://github.com/kien/ctrlp.vim
+"   git clone git://github.com/tpope/vim-surround
 "   git clone git://github.com/msanders/snipmate.vim
+"   git clone git://github.com/peterjpierce/pjp-snippets (mine)
 "   git clone git://github.com/scrooloose/nerdtree
 
 set nocompatible
@@ -51,6 +52,7 @@ set pastetoggle=<F12>
 "folding
 set foldenable
 set foldmethod=indent
+set foldlevelstart=99
 nmap <leader>z zA<cr>
 
 "netrw
