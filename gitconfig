@@ -12,5 +12,5 @@
   co = checkout
   ci = commit
   st = status
-  br = branch
+  br = branch -v
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
