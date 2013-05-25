@@ -45,7 +45,8 @@ nmap <leader>t :tabnew<cr>
 
 "invoke plugins
 nmap <leader>b :CtrlPBuffer<cr>
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>f :CtrlP<cr>
+nmap <leader>d :NERDTreeToggle<cr>
 
 "misc toggles
 nmap <leader>l :set list!<cr>
