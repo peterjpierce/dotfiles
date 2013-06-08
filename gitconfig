@@ -2,7 +2,7 @@
   name = Peter Pierce
   email = peter@truenorth.us
 [core]
-  autocrlf = input
+  autocrlf = false
   safecrlf = true
   editor = vim
   pager = less -FRSX
@@ -12,7 +12,7 @@
   co = checkout
   ci = commit
   st = status -sb
-  br = branch -v
+  br = branch -vv
   df = diff
   dfc = diff --check
   dfs = diff --stat
