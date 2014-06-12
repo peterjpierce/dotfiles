@@ -35,7 +35,7 @@ set smartindent
 set autoindent
 set backspace=eol,start,indent
 set wildignore+=*.pyc,*.o,*.swp,*gz,*.zip
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 let mapleader = ","
 inoremap jk <Esc>
