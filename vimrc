@@ -49,16 +49,14 @@ nmap <leader>b :CtrlPBuffer<cr>
 nmap <leader>f :CtrlP<cr>
 nmap <leader>d :NERDTreeToggle<cr>
 
+"quickfix navigation
+nmap ]q :cnext<cr>
+nmap [q :cprevious<cr>
+
 "misc toggles
 nmap <leader>l :set list!<cr>
 nmap <leader>c :set cursorline!<cr>
 set pastetoggle=<F12>
-
-"folding
-set foldenable
-set foldmethod=indent
-set foldlevelstart=99
-nmap <leader>z zA<cr>
 
 "netrw
 let g:netrw_preview=1
