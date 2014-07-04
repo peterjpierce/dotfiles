@@ -12,7 +12,7 @@
   co = checkout
   ci = commit
   st = status -sb
-  br = branch -vva
+  br = branch -vv
   df = diff
   dfc = diff --check
   dfs = diff --stat
