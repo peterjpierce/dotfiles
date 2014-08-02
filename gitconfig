@@ -13,6 +13,7 @@
   ci = commit
   st = status -sb
   br = branch -vv
+  bra = branch -vva
   df = diff
   dfc = diff --check
   dfs = diff --stat

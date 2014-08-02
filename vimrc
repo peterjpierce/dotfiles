@@ -39,6 +39,7 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 let mapleader = ","
 inoremap jk <Esc>
+nmap ) $
 
 "windowing (,w is much easier than ctrl-w)
 nmap <leader>w <C-W>
