@@ -21,6 +21,7 @@ execute pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
 syntax on
+set directory=/tmp//,.  "so Dropbox doesn't cycle
 
 set number
 set hlsearch
