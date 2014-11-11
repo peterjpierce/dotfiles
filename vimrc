@@ -58,7 +58,7 @@ nmap [q :cprevious<cr>
 "misc toggles
 nmap <leader>l :set list!<cr>
 nmap <leader>c :set cursorline!<cr>
-set pastetoggle=<F12>
+set pastetoggle=<F2>
 
 "netrw
 let g:netrw_preview=1
