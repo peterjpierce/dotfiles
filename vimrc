@@ -12,6 +12,7 @@
 "   DIR=$HOME/.vim/bundle; mkdir -p $DIR; cd $DIR
 "   git clone git://github.com/kien/ctrlp.vim
 "   git clone git://github.com/tpope/vim-surround
+"   git clone git://github.com/tpope/vim-fugitive
 "   git clone git://github.com/msanders/snipmate.vim
 "   git clone git://github.com/peterjpierce/pjp-snippets #(mine)
 "   git clone git://github.com/scrooloose/nerdtree
