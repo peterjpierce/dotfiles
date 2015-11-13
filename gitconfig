@@ -21,4 +21,4 @@
   rmt = remote -v
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [push]
-	default = matching
+  default = matching
