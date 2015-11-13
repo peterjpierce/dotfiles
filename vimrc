@@ -46,7 +46,6 @@ set wildignore+=*.pyc,*.o,*.swp,*gz,*.zip
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 let mapleader = ","
-inoremap jk <Esc>
 nmap ) $
 
 "windowing (,w is much easier than ctrl-w)
@@ -72,23 +71,13 @@ let g:netrw_preview=1
 let g:netrw_liststyle=3
 let g:netrw_winsize=30
 
-"toggle relative line numbering to ,r
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-nmap <leader>r :call NumberToggle()<cr>
-
-"toggle colored bar at col=80 with ,v (for Python PEP 8 compliance)
+"toggle colored bar at col=100 with ,v (for Python PEP 8 compliance)
 highlight ColorColumn ctermbg=4
 function! LineLimitToggle()
-  if(&colorcolumn == 80)
+  if(&colorcolumn == 100)
     set colorcolumn=0
   else
-    set colorcolumn=80
+    set colorcolumn=100
   endif
 endfunc
 nmap <leader>v :call LineLimitToggle()<cr>
