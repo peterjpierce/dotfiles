@@ -18,8 +18,14 @@
 "   git clone git://github.com/scrooloose/nerdtree
 
 set nocompatible
+
+if !empty($PP)
+  let &runtimepath = printf('%s/.vim,%s', $PP, &runtimepath)
+endif
+
 execute pathogen#infect()
 call pathogen#helptags()
+
 filetype plugin indent on
 syntax on
 set directory=/tmp//,.  "so Dropbox doesn't cycle

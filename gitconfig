@@ -18,4 +18,5 @@
   dfc = diff --check
   dfs = diff --stat
   lgs = log --stat
+  rmt = remote -v
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
