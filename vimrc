@@ -62,8 +62,10 @@ nmap ]q :cnext<cr>
 nmap [q :cprevious<cr>
 
 "misc toggles
-nmap <leader>l :set list!<cr>
-nmap <leader>c :set cursorline!<cr>
+nmap <silent> <leader>l :set list!<cr>
+nmap <silent> <leader>c :set cursorline!<cr>
+nmap <silent> <leader>n :set number!<cr>
+nmap <silent> <leader>r :set relativenumber!<cr>
 set pastetoggle=<F2>
 
 "netrw
