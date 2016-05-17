@@ -42,6 +42,7 @@ set smarttab
 set smartindent
 set autoindent
 set backspace=eol,start,indent
+set listchars=tab:>-,trail:-,eol:$,nbsp:%
 set wildignore+=*.pyc,*.o,*.swp,*gz,*.zip
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
