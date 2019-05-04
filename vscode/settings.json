@@ -1,0 +1,19 @@
+{
+    "window.zoomLevel": 1,
+    "window.titleBarStyle": "native",
+    "editor.fontSize": 13,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "html.format.endWithNewline": true,
+    "workbench.iconTheme": "vscode-icons",
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.rulers": [120],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground":  "#666600"
+    },
+    "[python]": {
+        "editor.rulers": [80,100]
+    }
+}

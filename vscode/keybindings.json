@@ -1,0 +1,31 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+, d",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "alt+, l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+, h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+, k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "alt+, j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+insert f",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "alt+insert d",
+        "command": "explorer.newFolder"
+    }
+]
