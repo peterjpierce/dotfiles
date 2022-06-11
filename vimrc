@@ -6,16 +6,16 @@
 "   #!/usr/bin/env bash
 "
 "   DIR=$HOME/.vim; mkdir -p $DIR; cd $DIR
-"   git clone git://github.com/tpope/vim-pathogen
+"   git clone git@github.com:tpope/vim-pathogen.git
 "   ln -s vim-pathogen/autoload .
-"
+
 "   DIR=$HOME/.vim/bundle; mkdir -p $DIR; cd $DIR
-"   git clone git://github.com/kien/ctrlp.vim
-"   git clone git://github.com/tpope/vim-surround
-"   git clone git://github.com/tpope/vim-fugitive
-"   git clone git://github.com/msanders/snipmate.vim
-"   git clone git://github.com/peterjpierce/pjp-snippets #(mine)
-"   git clone git://github.com/scrooloose/nerdtree
+"   git clone git@github.com:kien/ctrlp.vim.git
+"   git clone git@github.com:tpope/vim-surround.git
+"   git clone git@github.com:tpope/vim-fugitive.git
+"   git clone git@github.com:msanders/snipmate.vim.git
+"   git clone git@github.com:peterjpierce/pjp-snippets.git #(mine)
+"   git clone git@github.com:scrooloose/nerdtree.git
 
 set nocompatible
 
